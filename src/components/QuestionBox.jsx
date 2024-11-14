@@ -1,15 +1,17 @@
-import React from 'react';
-import QuestionChoice from './QuestionChoice';
+import React from "react";
+import QuestionChoice from "./QuestionChoice";
 
 const QuestionBox = ({ questions, query, selectchoice }) => {
   // TASK 3: Implement logic to highlight the question text when the "Highlight" button is clicked.
   // You will need to manage state for this. Make the text red when highlighted and blue when not.
   const highlightHandler = () => {
     // Implement the highlight logic
+    document.querySelector("h2").style.color = "red";
   };
 
   const removeHighlightHandler = () => {
     // Implement the remove highlight logic
+    document.querySelector("h2").style.color = "black";
   };
 
   return (
